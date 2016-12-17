@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Todo">
+
+<head>
+    <title>Todo list</title>
+    
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>	
+   
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">  	
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.3.1/jquery.twbsPagination.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+    <script src="jquery-2.1.0.min.js"></script>
+
+    
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <script src="js/item-ajax.js"></script>    
+    </head>
+    
+    <body>
+     
+                
+       <div ng-controller="todoController">
+          <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 container">
+          <div class="nav">
+				<img src="list.png"></a>
+			</div>
+			
+			<div class="body">
+				<hr align="left">
+				<h2>GET THINGS DONE</h2>
+				<h3>your daily todo list</h3>
+			
+ <!----form---->
+                     
+                  		
+    <form id = "ajax-contact" method = "post"> 
+    <input type="text" id ="newtodo" value="" required/>
+    <button class="btn_insert" type="submit" value="Submit" data-target="#creat-task">Go</button>
+    </form>
+    
+ <!----list of tasks---->
+   			  
+    <div id="field">
+       <div id="tasks" name="message"> 
+       
+       
+       </div>
+    </div>
+    
+<!----clear button---->  
+                                     
+        <button class="btn_clear">Clear Completed</button> 
+            </div>
+           </div>
+    	</div> 
+         
+</div>  <!---end of the block--->
+                                                 
+     
+                
+                            
+                            
+                             
+                             
+      <!--    angular form      -->                  
+            		          
+         <!--    <form name="frm" class="frm" ng-submit="addTodo()">  <!-- here is list input -->
+           <!--        <input type="text" name = "newtodo" ng-model="newTodo" class="newTodo" required/>
+               <button ng-disabled="frm.$invalid">Go</button>
+            </form>
+            <ul class="frm">
+               <li ng-repeat="todo in todos">
+               <input type="checkbox" ng-model="todo.done"/>
+               <span ng-class="{'done': todo.done}" data-target="#create-item">{{todo.title}}</span>
+               </li>
+            </ul>
+            
+                 <button ng-click="clearCompleted()">Clear Completed</button> 
+            </div>
+           </div>
+    	</div>   
+        </div>   
+                
+            
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src = "js/jquery-1.4.2.js"></script>  -->  
+ <!--       
+    <script>
+        
+         angular.module('Todo', []).
+        controller('todoController', ['$scope', function($scope){
+            $scope.todos = [
+                {'title': 'Build a todo app', 'done': false}
+            ];
+            
+            $scope.addTodo = function(){
+                $scope.todos.push({'title': $scope.newTodo, 'done': false})
+                $scope.newTodo = ''
+            }
+            $scope.clearCompleted = function(){
+                $scope.todos = $scope.todos.filter(function(item){
+                    return !item.done
+                });
+                
+            }
+        } ])
+        
+    </script>
+    -->  
+       
+         
+    <footer>
+		<ul>
+			<li><a href="">© 2016 Mariya Rafalovich.</a></li>
+			<li>•</li>
+			<li><a href="">Privacy &amp; Terms</a></li>
+			<li>•</li>
+			<li><a href="">Contact</a></li>
+		</ul>
+	</footer>
+        
+    </body>
+    
+    
+    
+</html>
+        
+        
